@@ -1,5 +1,11 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const client2 = new Discord.Client();
+const client3 = new Discord.Client();
+const client4 = new Discord.Client();
+const client5 = new Discord.Client();
+const client6 = new Discord.Client();
+
 const ayarlar = require('./ayarlar.json');
 const { Client, Util } = require('discord.js');
 require('./util/eventLoader.js')(client);
@@ -109,4 +115,37 @@ client.on('error', e => {
     console.log(chalk.bgRed(e.replace(regToken, 'that was redacted')));
 });
 
-client.login(ayarlar.token);
+client.login("");
+client2.login("");
+client3.login("");
+client4.login("");
+client5.login("");
+client6.login("");
+
+
+client.on("ready", () => {
+    client.channels.cache.get('Ses Kanalı İdsi').join();
+    });
+
+    client2.on("ready", () => {
+        client2.channels.cache.get('Ses Kanalı İdsi').join();
+        });
+
+        client3.on("ready", () => {
+            client3.channels.cache.get('Ses Kanalı İdsi').join();
+            });
+
+
+            client4.on("ready", () => {
+                client4.channels.cache.get('Ses Kanalı İdsi').join();
+                });
+
+
+                client5.on("ready", () => {
+                    client5.channels.cache.get('Ses Kanalı İdsi').join();
+                    });
+
+
+                    client6.on("ready", () => {
+                        client6.channels.cache.get('Ses Kanalı İdsi').join();
+                        });
